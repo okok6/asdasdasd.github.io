@@ -1,0 +1,152 @@
+body {
+	background: #f4f4f4;
+}
+
+/*----------------- 首页 -------------*/
+nav {
+	padding: 15px;
+	/* height: 230px; */
+	background: linear-gradient(0deg, rgba(219, 233, 234, 0.3), rgba(125, 195, 135, 0.3));
+}
+
+.news {
+	margin: 15px 15px 0 15px;
+	background: #fff;
+	padding: 10px;
+	border-radius: 10px;
+	display: flex;
+}
+
+.news-left {
+	font-style: italic;
+	font-size: 16px;
+	font-weight: 700;
+	margin-right: 10px;
+}
+
+.news-right {
+	font-size: 16px;
+	border-left: 1px solid #eee;
+	padding-left: 10px;
+}
+
+.main {
+	margin: 15px;
+	background: #fff;
+	padding: 15px;
+	border-radius: 10px;
+}
+
+.main-title {
+	margin-left: -15px;
+	padding-left: 15px;
+	font-size: 16px;
+	border-left: 2px solid #09bb07;
+	font-weight: 700;
+	margin-top: 10px;
+	word-break: break-all;
+}
+
+.ttd {
+	width: 50%;
+	text-align: center;
+}
+
+.td-item {
+	width: 98%;
+	text-align: center;
+	border: 1px solid #eee;
+	border-radius: 10px;
+	padding: 15px;
+	margin: 5px -5px;
+}
+
+.tdactive {
+	border-color: #09bb07;
+	color: #09bb07;
+}
+
+.sms-type {
+	text-align: center;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	border-radius: 20px;
+	border: 1px solid #09bb07;
+	/* margin-top: 97px; */
+}
+
+.sms-type-item {
+	width: 50%;
+	text-align: center;
+	color: #09bb07;
+	border-radius: 20px;
+	height: 40px;
+	line-height: 40px;
+}
+
+.itactive {
+	background: #09bb07;
+	color: #fff;
+	background-image: -webkit-linear-gradient(top, #5cb85c 0%, #419641 100%);
+}
+
+footer {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+}
+
+.footer-img {
+	width: 24px;
+	height: 24px;
+}
+
+.footer-current-a {
+	color: rgb(9, 187, 7);
+	font-size: 10px;
+	line-height: normal;
+	margin-top: 3px;
+}
+
+.footer-a {
+	color: rgb(153, 153, 153);
+	font-size: 10px;
+	line-height: normal;
+	margin-top: 3px;
+}
+
+/*----------------- 短信 -------------*/
+.sms-xuanhao {
+	color: #fff;
+	border-color: #19be6b;
+	background-color: #19be6b;
+	border-radius: 50px;
+	padding: 5px 10px 5px 10px;
+}
+/*-----------------管理 -------------*/
+.gl-td1 {
+	width: 5%;
+}
+.gl-td2 {
+	width: 85%;
+}
+.gl-td3 {
+	width: 10%;
+	font-weight: 900;
+	text-align: right;
+}
+.td-icon {
+	width: 24px;
+	height: 24px;
+}
+
+/* -------------账户中心------------ */
+.account-detail {
+	font-weight: 400 !important;
+}
+.hid {
+	display: none;
+}
