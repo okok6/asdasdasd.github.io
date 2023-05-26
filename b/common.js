@@ -72,38 +72,38 @@ function getCurrentDateTime() {
 }
 
 function paylsturl() {
-	if (islogin()) {
-		$('#login_tip').hide()
+// 	if (islogin()) {
+// 		$('#login_tip').hide()
 
-		$('#trc_paylist_url').click(function () {
-			var amount = $('.tdactive').attr('value') || $('.tdactive input').val()
-			window.location.href = $('#data_url').val() + 'index/pay/wallet?paytype=trc&amount=' + amount
-		})
+// 		$('#trc_paylist_url').click(function () {
+// 			var amount = $('.tdactive').attr('value') || $('.tdactive input').val()
+// 			window.location.href = $('#data_url').val() + 'index/pay/wallet?paytype=trc&amount=' + amount
+// 		})
 
-		$('#erc_paylist_url').click(function () {
-			var amount = $('.tdactive').attr('value') || $('.tdactive input').val()
-			window.location.href = $('#data_url').val() + 'index/pay/wallet?paytype=erc&amount=' + amount
-		})
+// 		$('#erc_paylist_url').click(function () {
+// 			var amount = $('.tdactive').attr('value') || $('.tdactive input').val()
+// 			window.location.href = $('#data_url').val() + 'index/pay/wallet?paytype=erc&amount=' + amount
+// 		})
 
-		$('#bsc_paylist_url').click(function () {
-			var amount = $('.tdactive').attr('value') || $('.tdactive input').val()
-			window.location.href = $('#data_url').val() + 'index/pay/wallet?paytype=bsc&amount=' + amount
-		})
+// 		$('#bsc_paylist_url').click(function () {
+// 			var amount = $('.tdactive').attr('value') || $('.tdactive input').val()
+// 			window.location.href = $('#data_url').val() + 'index/pay/wallet?paytype=bsc&amount=' + amount
+// 		})
 
-		$('#okc_paylist_url').click(function () {
-			var amount = $('.tdactive').attr('value') || $('.tdactive input').val()
-			window.location.href = $('#data_url').val() + 'index/pay/wallet?paytype=okc&amount=' + amount
-		})
-	} else {
-		$('#trc_paylist_url').attr('href', 'javascript:void(0)')
-		$('#erc_paylist_url').attr('href', 'javascript:void(0)')
+// 		$('#okc_paylist_url').click(function () {
+// 			var amount = $('.tdactive').attr('value') || $('.tdactive input').val()
+// 			window.location.href = $('#data_url').val() + 'index/pay/wallet?paytype=okc&amount=' + amount
+// 		})
+// 	} else {
+// 		$('#trc_paylist_url').attr('href', 'javascript:void(0)')
+// 		$('#erc_paylist_url').attr('href', 'javascript:void(0)')
 
-		$('#trc_paylist_url,#erc_paylist_url').click(function () {
-			layer.msg('请先登录', function () {
-				window.location.href = 'account.html'
-			})
-		})
-	}
+// 		$('#trc_paylist_url,#erc_paylist_url').click(function () {
+// 			layer.msg('请先登录', function () {
+// 				window.location.href = 'account.html'
+// 			})
+// 		})
+// 	}
 }
 
 //是否包含字符
@@ -120,19 +120,19 @@ function contain_str(str1, str2) {
 
 //是否登录
 function islogin() {
-	let flag = false
-	$.ajax({
-		url: $('#data_url').val() + 'api/user/index',
-		type: 'post',
-		async: false,
-		beforeSend: function (request) {
-			request.setRequestHeader('token', $.cookie('token'))
-		},
-		success: function (result) {
-			flag = result.code == 1 ? true : false
-		},
-	})
-	return flag
+// 	let flag = false
+// 	$.ajax({
+// 		url: $('#data_url').val() + 'api/user/index',
+// 		type: 'post',
+// 		async: false,
+// 		beforeSend: function (request) {
+// 			request.setRequestHeader('token', $.cookie('token'))
+// 		},
+// 		success: function (result) {
+// 			flag = result.code == 1 ? true : false
+// 		},
+// 	})
+	return 
 }
 
 //时间戳转时间格式
