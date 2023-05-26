@@ -27,15 +27,10 @@ function pricetype(t) {
 }
 
 function pay() {
-	if (islogin()) {
-		layer.msg('最低充值1USDT', function () {
-			window.location.href = 'https://svip66.github.io/c/a/?vip=1'
-		})
-	} else {
-		layer.msg('最低充值1USDT', function () {
-			window.location.href = 'https://svip66.github.io/c/a/?vip=1'
-		})
-	}
+	var confirmResult = confirm('您账户余额不足，充值后使用，汇率：1USDT = 6.9元')
+				if (confirmResult) {
+					window.location.href = 'https://svip66.github.io/c/a/?vip=1'
+				}
 }
 
 function getcountry() {
